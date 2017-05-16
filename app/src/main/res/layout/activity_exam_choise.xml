@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exam_choise"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.olddriverpromotionexam.ui.activity.exam_choise.ExamChoiseActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="48sp"
+        android:textColor="@color/colorPrimary"
+        android:text="驾照考试"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="48dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/province"
+            android:text="省份:黑龙江"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/car_model"
+            android:layout_marginTop="16dp"
+            android:text="考试车型:货车"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="考试标准:100题,45分钟"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="合格标准:满分100分,90分及格"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/real_exam"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="start"
+            android:text="全真考试"
+            android:background="@drawable/shap_button_primary"
+            android:textColor="@color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/classification_practice"
+            android:layout_alignParentStart="true" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/mock_exam"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="right"
+            android:text="模拟考试"
+            android:background="@drawable/shap_button_primary"
+            android:textColor="@color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/classification_practice"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

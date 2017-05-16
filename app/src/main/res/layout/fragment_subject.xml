@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.olddriverpromotionexam.ui.fragment.SubjectFragment"
+    android:weightSum="1">
+    <ImageView
+        android:src="@drawable/test"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/random_practice"
+            android:text="@string/random_practice"
+            android:background="@drawable/shap_button_primary"
+            android:textColor="@color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/order_practice"
+            android:text="@string/order_practice"
+            android:background="@drawable/shap_button_primary"
+            android:textColor="@color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/knowledge_point_practice"
+            android:text="@string/knowledge_point_practice"
+            android:background="@drawable/shap_button_primary"
+            android:textColor="@color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/classification_practice"
+            android:layout_alignParentStart="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/classification_practice"
+            android:text="@string/classification_practice"
+            android:background="@drawable/shap_button_primary"
+            android:textColor="@color/white"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/start_exam"
+            android:text="@string/start_exam"
+            android:background="@drawable/shap_button_red"
+            android:textColor="@color/white"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
+        android:layout_height="0dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:text="@string/about_me"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/my_wrong_question"
+                android:text="@string/my_wrong_question"
+                android:background="@drawable/shap_button_accent"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/my_collection"
+                android:text="@string/my_collection"
+                android:background="@drawable/shap_button_accent"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/exam_record"
+                android:text="@string/exam_record"
+                android:background="@drawable/shap_button_accent"
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

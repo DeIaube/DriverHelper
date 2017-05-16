@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.administrator.olddriverpromotionexam.ui.activity.change_model_province.ChangeModelOrProvinceActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="360dp">
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="更改信息"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="考题会因地区和驾照类型的不同而"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="而有所差异,请正确选择车型和地区"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/choise_province"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <TextView
+                android:layout_marginLeft="16dp"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text="选择省份"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/nothing"
+                android:text=">"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/province"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/nothing"
+                android:text="黑龙江"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="驾照类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/car"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="小车"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/truck"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="货车"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/bus"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="客车"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:text="@string/confirm"/>
+
+</LinearLayout>
